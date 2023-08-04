@@ -1,12 +1,12 @@
 /* Remove the default blue color for the select element (type) */
 select {
-  -webkit-appearance: none;
-  font-family: fakeReceipt;
-  border: 1px solid #e5e5e5;
-  background: transparent;
-  width: 100%;
-  cursor: pointer;
-  color: inherit; /* Ensure the text color is not overridden */
+  -webkit-appearance: none !important;
+  font-family: fakeReceipt !important;
+  border: 2px dashed #e5e5e5 !important;
+  background: transparent !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  color: inherit !important; /* Ensure the text color is not overridden */
 }
 
 /* Style the custom dropdown arrow */
@@ -15,7 +15,7 @@ select::-ms-expand {
 }
 
 select:hover {
-  border-color: #333;
+  border-color: #333 !important;
 }
 
 select:focus {
@@ -26,19 +26,19 @@ select:focus {
 
 /* Remove the default blue color for date picker */
 input[type="date"] {
-  -webkit-appearance: none;
-  background-color: transparent;
-  color: inherit;
-  border: 2px dashed #e5e5e5;
-  padding: 0.5rem 1rem;
-  height: 2rem;
-  width: 100%;
-  cursor: pointer;
+  -webkit-appearance: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: 2px dashed #e5e5e5 !important;
+  padding: 0.5rem 1rem !important;
+  height: 2rem !important;
+  width: 100% !important;
+  cursor: pointer !important;
 }
 
 /* Style the date picker dropdown arrow */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+  filter: invert(1) !important;
 }
 
 /* Remove the default blue link color */
@@ -73,11 +73,11 @@ button {
 .toggleFocus {
   border-color: transparent;
   background-color: transparent;
-  font-family: 'fakeReceipt';
+  font-family: 'fakeReceipt'!important;
 }
 
 .dark-mode {
-  background-color: #212121;  s
+  background-color: #212121;
 }
 
 .dark-mode .transaction-card {
@@ -106,7 +106,7 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
-  color: #333;
+  color: #333 !important;
 }
 
 form {
@@ -122,11 +122,11 @@ form label {
 }
 
 form input {
-  display: block;
-  width: 100%;
-  border-style: dashed;
-  border-color: #e5e5e5;
-  height: 2rem;
+  display: block !important;
+  width: 100% !important;
+  border-style: dashed !important;
+  border: 2px dashed #e5e5e5 !important;
+  height: 2rem !important;
 }
 
 form button {
@@ -137,7 +137,7 @@ form button {
   border: none;
   cursor: pointer;
   border-radius: 0.375rem;
-  font-family: fakeReceipt;
+  font-family: fakeReceipt !important;
   height: 3rem;
 }
 
@@ -151,18 +151,18 @@ form button {
 }
 
 input {
-  font-family: fakeReceipt;
+  font-family: fakeReceipt !important;
 }
 
 select {
-  -webkit-appearance: none;
-  background-color: transparent;
-  color: inherit;
-  border: 2px dashed #e5e5e5;
-  padding: 0 0 0 1rem;
-  height: 2.5rem;
-  width: 100%;
-  cursor: pointer;
+  -webkit-appearance: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: 2px dashed #e5e5e5 !important;
+  padding: 0 0 0 1rem !important;
+  height: 2.5rem !important;
+  width: 100% !important;
+  cursor: pointer !important;
 }
 
 .transaction-card {
@@ -170,11 +170,11 @@ select {
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 1px rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: #333 !important;
 }
 
 h1 {
-  color: #333;
+  color: #333 !important;
 }
 
 
