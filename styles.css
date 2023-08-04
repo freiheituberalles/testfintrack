@@ -3,8 +3,6 @@ select {
   -webkit-appearance: none;
   font-family: fakeReceipt;
   border: 1px solid #e5e5e5;
-  padding: 0.5rem 1rem;
-  height: 2rem;
   background: transparent;
   width: 100%;
   cursor: pointer;
@@ -31,7 +29,7 @@ input[type="date"] {
   -webkit-appearance: none;
   background-color: transparent;
   color: inherit;
-  border: 1px solid #e5e5e5;
+  border: 2px dashed #e5e5e5;
   padding: 0.5rem 1rem;
   height: 2rem;
   width: 100%;
@@ -157,8 +155,14 @@ input {
 }
 
 select {
-  font-family: fakeReceipt;
-  border-color: transparent;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: inherit;
+  border: 2px dashed #e5e5e5;
+  padding: 0 0 0 1rem;
+  height: 2.5rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .transaction-card {
