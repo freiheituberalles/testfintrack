@@ -47,9 +47,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Remove the default blue link color */
 a {
-  color: inherit !important;
+  color: #333 !important;
   text-decoration: none !important;
 }
+
 /* Style for the cash-in class */
 .cash-in {
   border: 1px solid #0f0;
@@ -78,6 +79,8 @@ button {
   border-color: transparent;
   background-color: transparent;
   font-family: 'fakeReceipt'!important;
+  color: #333 !important;
+  text-decoration: none !important;
 }
 
 .dark-mode {
