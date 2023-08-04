@@ -9,6 +9,10 @@ select {
   color: inherit !important; /* Ensure the text color is not overridden */
 }
 
+body {
+  font-family: fakeReceipt !important;
+}
+
 /* Style the custom dropdown arrow */
 select::-ms-expand {
   display: none; /* Hide the arrow in IE11 */
@@ -43,8 +47,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Remove the default blue link color */
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
+  text-decoration: none !important;
 }
 /* Style for the cash-in class */
 .cash-in {
