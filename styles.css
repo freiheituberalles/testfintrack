@@ -1,7 +1,28 @@
-input {
-  -webkit-appearance: none; /* Remove default Safari styles */
+/* Remove Safari's default styling for select elements */
+select {
+  -webkit-appearance: none;
+  font-family: fakeReceipt;
+  border: 1px solid #e5e5e5;
+  padding: 0.5rem 1rem;
+  height: 2rem;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
 }
 
+/* Add styles to make the custom dropdown consistent */
+select::-ms-expand {
+  display: none; /* Hide the arrow in IE11 */
+}
+
+select:hover {
+  border-color: #333;
+}
+
+select:focus {
+  outline: none;
+  border-color: #333;
+}
 /* Style for the cash-in class */
 .cash-in {
   border: 1px solid #0f0;
