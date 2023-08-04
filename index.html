@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financial Tracker</title>
+  <title>Biaya Hidup Mu</title>
   <link rel="stylesheet" href="styles.css">
-</head>
+  <style>
+    @font-face {
+      font-family: 'fakeReceipt'; /* Give a name to your font */
+      src: url('/fonts/fake\ receipt.otf') format('opentype'); /* Replace 'path/to/your-font.otf' with the actual path to your font file */
+    }
 
+    body {
+      font-family: 'fakeReceipt', sans-serif; /* Use the font in your CSS styles */
+    }
+  </style>
+</head>
 <body>
   <div class="container">
-    <h1>Menuju Kaya Raya.com</h1>
-    <div id="totalBalance">Total Balance: $0.00</div>
+    <button id="themeToggle" class="toggleFocus">
+      Klik untuk Ubah Mode
+    </button>
+    <h1>Biaya Hidup Mu</h1>
+    <p class = "subtitle">Sebuah Aplikasi gratis untuk ngitung apakah biaya hidup anda masuk akal atau tidak</p>
+    <br>
+    <hr>
+    <!-- Add a new element to display the total balance -->
+    <div id="totalBalanceContainer">
+      <p id="totalBalance">
+      <p id="dynamicText"></p>
+    </div>
+    <hr>
     <form id="transactionForm">
-      <label for="type">Type:</label>
-      <select id="type" required>
-        <option value="cashIn">Cash In</option>
-        <option value="cashOut">Cash Out</option>
-      </select>
-
-      <label for="date">Date:</label>
+      <br>
+      <label for="date"><b>Tgl Transaksi:</b></label>
       <input type="date" id="date" required>
 
-      <label for="item">Item:</label>
+      <label for="item"><b>Item (Transaksinya ttg apa):</b></label>
       <input type="text" id="item" required>
 
-      <label for="amount">Amount:</label>
+      <label for="amount"><b>Nominal:</b></label>
       <input type="number" id="amount" required>
 
-      <button type="submit">Add Transaction</button>
+      <label for="type"><b>Tipe:</b></label>
+      <select id="type" required>
+        <option value="cash-in">Cash In</option>
+        <option value="cash-out">Cash Out</option>
+      </select>
+    
+      <button type="submit">Cetak Transasksi</button>
     </form>
 
-    <div id="transactionsList"></div>
+    <div class="transaction-cards" id="transactionCards">
+      <!-- Transaction cards will be added here dynamically using TypeScript -->
+    </div>
   </div>
 
   <script src="script.js"></script>
-  <script>
-    // Reinitialize the transactions array with data from local storage
-    transactions = loadTransactionsFromLocalStorage();
-  </script>
 </body>
-
 </html>
