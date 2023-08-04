@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.innerHTML = `
       <p>Tgl Transaksi: ${transaction.date}</p>
       <p>Item: ${transaction.item}</p>
-      <p>Jumlah: Rp${transaction.amount}</p>
+      <p>Nominal: Rp${transaction.amount}</p>
       <p>Tipe: ${transaction.type === 'cash-in' ? 'Cash In' : 'Cash Out'}</p> <!-- Display the type label -->
       <button class="delete-btn">Buang</button>
     `;

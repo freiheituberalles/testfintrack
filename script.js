@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
             card.style.backgroundColor = "#fafafa"; // Blue background for cash-in
             card.style.color = "#0016c2"; // Green text for cash-in
         }
-        card.innerHTML = "\n      <p>Tgl Transaksi: ".concat(transaction.date, "</p>\n      <p>Item: ").concat(transaction.item, "</p>\n      <p>Jumlah: Rp").concat(transaction.amount, "</p>\n      <p>Tipe: ").concat(transaction.type === 'cash-in' ? 'Cash In' : 'Cash Out', "</p> <!-- Display the type label -->\n      <button class=\"delete-btn\">Buang</button>\n    ");
+        card.innerHTML = "\n      <p>Tgl Transaksi: ".concat(transaction.date, "</p>\n      <p>Item: ").concat(transaction.item, "</p>\n      <p>Nominal: Rp").concat(transaction.amount, "</p>\n      <p>Tipe: ").concat(transaction.type === 'cash-in' ? 'Cash In' : 'Cash Out', "</p> <!-- Display the type label -->\n      <button class=\"delete-btn\">Buang</button>\n    ");
         var deleteBtn = card.querySelector(".delete-btn");
         deleteBtn.addEventListener("click", function () {
             deleteTransaction(transaction);
