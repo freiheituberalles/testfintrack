@@ -34,7 +34,7 @@ input[type="date"] {
   background-color: transparent !important;
   color: inherit !important;
   border: 2px dashed #e5e5e5 !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0 1rem !important;
   height: 2rem !important;
   width: 100% !important;
   cursor: pointer !important;
@@ -177,7 +177,6 @@ select {
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 1px rgba(0, 0, 0, 0.1);
-  color: #333 !important;
 }
 
 h1 {
