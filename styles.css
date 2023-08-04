@@ -1,3 +1,7 @@
+input {
+  -webkit-appearance: none; /* Remove default Safari styles */
+}
+
 /* Style for the cash-in class */
 .cash-in {
   border: 1px solid #0f0;
@@ -29,7 +33,7 @@ button {
 }
 
 .dark-mode {
-  background-color: #212121;
+  background-color: #212121;  s
 }
 
 .dark-mode .transaction-card {
